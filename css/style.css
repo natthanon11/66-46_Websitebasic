@@ -2,15 +2,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto";
+  background-color: skyblue;
 }
 header {
-  background-color: rgb(30, 207, 74);
+  background-color: skyblue;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 0 64px;
 }
 .menu ul {
   display: flex;
@@ -35,6 +36,14 @@ nav {
   text-decoration: none;
   border: none;
 }
+.btn-primary:hover {
+  background-color: rgb(4, 185, 65);
+  color: rgb(97, 48, 48);
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+}
 .btn-secondary {
   background-color: white;
   color: blue;
@@ -43,9 +52,46 @@ nav {
   text-decoration: none;
   border: 1px solid blue;
 }
-footer {
-  background-color: green;
+.btn-secondary:hover {
+  background-color: rgb(71, 236, 21);
+  color: blue;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid blue;
 }
+
 .container {
-  background-color: blue;
+  width: 70%;
+  margin: auto;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+footer {
+  background-color: rgba(16, 65, 226, 0.856);
+  height: 60px;
+
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(247, 6, 6);
 }
