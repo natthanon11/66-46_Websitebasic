@@ -1,17 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
-  background-color: skyblue;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
 }
 header {
-  background-color: skyblue;
+  background-color: rgb(51, 179, 179);
+  margin-bottom: 20px;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 64px;
+  padding: 0px 64px;
 }
 .menu ul {
   display: flex;
@@ -23,22 +24,19 @@ nav {
   align-items: center;
   gap: 8px;
 }
-.Logo-menu {
+.logo-menu {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.btn-primary {
-  background-color: blue;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 10px;
-  text-decoration: none;
-  border: none;
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.btn-primary:hover {
-  background-color: rgb(4, 185, 65);
-  color: rgb(97, 48, 48);
+.btn-primary {
+  background-color: hsl(221, 100%, 50%);
+  color: white;
   padding: 8px 16px;
   border-radius: 10px;
   text-decoration: none;
@@ -50,25 +48,16 @@ nav {
   padding: 8px 16px;
   border-radius: 10px;
   text-decoration: none;
-  border: 1px solid blue;
+  border: 1px soild blue;
 }
-.btn-secondary:hover {
-  background-color: rgb(71, 236, 21);
-  color: blue;
-  padding: 8px 16px;
-  border-radius: 10px;
-  text-decoration: none;
-  border: 1px solid blue;
-}
-
 .container {
   width: 70%;
-  margin: auto;
+  margin: 0 auto;
 }
 .card {
   background-color: white;
   border-radius: 10px;
-  padding: 40px;
+  padding: 20px;
   margin-bottom: 20px;
 }
 .card img {
@@ -76,12 +65,11 @@ nav {
   border-radius: 10px;
 }
 footer {
-  background-color: rgba(16, 65, 226, 0.856);
-  height: 60px;
-
-  color: white;
-  padding: 20px;
+  background-color: rgb(48, 174, 247);
   display: flex;
+  height: 100px;
+  color: white;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -89,9 +77,11 @@ footer {
 }
 a {
   text-decoration: none;
-  color: black;
 }
 a:hover {
-  text-decoration: none;
-  color: rgb(247, 6, 6);
+  color: yellow;
+}
+button:hover {
+  color: black;
+  background-color: rgb(186, 185, 238);
 }
