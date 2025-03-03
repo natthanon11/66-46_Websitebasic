@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrapintro</title>
+    <!-- <link rel="stylesheet" href="CSS/Boostrap/bootstrap.min.css"> -->
+    <!-- CDN : Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            background-color: rgb(6, 192, 189);
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            ul{
+                text-align: left;
+            }
+        }
+          .container-fluid{
+            background-color: rgb(205, 3, 236);
+        }
+    </style>
+
+
+    
+</head>
+<body>
+    <h1>Bootstrap Intro</h1>
+    <hr>
+    <h3>เปรียบเทียบ container vs container-fluid</h3>
+    <!-- container -->
+    <div class="container">
+        <p>Monday</p>
+    </div>
+    <!-- container-fluid -->
+      <div class="container-fluid">
+        <p>container-fluid</p>
+    </div>
+    <hr>
+    <!-- เรียนรู้คำสั่ง (class) ของ bootstrap -->
+    <h3>เรียนรู้คำสั่ง (class) ของ bootstrap</h3>
+    <div class="container">
+        <h2>เขียน stylesheet ควบคุมด้วยตนเอง</h2>
+        <ul>
+            <li>background-color : rgb(0, 110, 255)</li>
+            <li>text-align : center</li>
+            <li>color : white</li>
+            <li>padding : 20px </li>
+            <li>margin-top : 20px</li>
+        </ul>
+    </div>
+       <div class="container bg-dark text-warning text-start p-5 mt-5">
+        <h2>เขียน stylesheet ควบคุมด้วยตนเอง</h2>
+         <ul>
+            <li>background-color ==> bg-dark</li>
+            <li>text-align ==>  text-start</li>
+            <li>color ==> text-warning</li>
+            <li>padding ==> p-5 </li>
+            <li>margin-top ==> mt-05</li>
+        </ul>
+    </div>
+<hr>
+<!-- Grid -->
+ <div class="container-fluid bg-dark text-light text-center  p-2">
+    <h3>Grid Basic</h3>
+    <p>แบ่งคอลัมน์</p>
+ </div>
+ <div class="row mb-5">
+    <div class="col-sm-4 bg-warning">
+        <h4>Colum 1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, fuga?</p>
+    </div>
+    <div class="col-sm-4 bg-danger">
+        <h4>Colum 2</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, voluptates.</p>
+    </div>
+    <div class="col-sm-4 bg-success">
+        <h4>Colum 3</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore.</p>
+    </div>
+ </div>
+ <hr>
+ <div class="container-fluid bg-dark text-light text-center  p-2">
+    <h3>Grid & Card & button</h3>
+    <div class="container ">
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <div class="card p-3 px-2 mb-3">
+                    <h4>colum 1</h4>
+                    <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sit.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 px-2 mb-3">
+                    <h4>colum 2</h4>
+                    <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sit.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 px-2 mb-3">
+                    <h4>colum 3</h4>
+                    <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sit.</p>
+                </div>
+            </div>
+        </div>
+         <div class="row mb-3">
+            <div class="col-md-4">
+                <div class="card p-3 px-2 mb-3">
+                    <div class="card-body">
+                    <h4 class="card-title">colum 1</h4>
+                    <p class="text-start card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sit.</p>
+                    <button type="button" class="btn btn-primary">Go Somewhere</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 px-2 mb-3">
+                     <div class="card-body">
+                    <h4 class="card-title">colum 2</h4>
+                    <p class="text-start card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sit.</p>
+                    <button type="button" class="btn btn-info">Go Somewhere</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 px-2 mb-3">
+                    <div class="card-body ">
+                    <h4 class="card-title">colum 3</h4>
+                    <p class="text-start card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sit.</p>
+                    <div class="d-grid gap-1">
+                <button type="button" class="btn btn-outline-warning disabled">Go Somewhere</button>
+                <button type="button" class="btn btn-outline-danger">Go Somewhere</button></div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <div class="card p-3 px-2 mb-3">
+                    <div class="card-body">
+                        <img class="card-img-top" src="images/rabbit3.jpg" alt="Card image">
+                    <h4 class="card-title">colum 1</h4>
+                    <p class="text-start card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sit.</p>
+                    <button type="button" class="btn btn-primary">Go Somewhere</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 px-2 mb-3">
+                     <div class="card-body">
+                         <img class="card-img-top" src="images/rabbit3.jpg" alt="Card image">
+                    <h4 class="card-title">colum 2</h4>
+                    <p class="text-start card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sit.</p>
+                    <button type="button" class="btn btn-info">Go Somewhere</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 px-2 mb-3">
+                    <div class="card-body ">
+                         <img class="card-img-top" src="images/rabbit3.jpg" alt="Card image">
+                    <h4 class="card-title">colum 3</h4>
+                    <p class="text-start card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sit.</p>
+                    <div class="d-grid gap-1">
+                <button type="button" class="btn btn-outline-warning disabled">Go Somewhere</button>
+                <button type="button" class="btn btn-outline-danger">Go Somewhere</button></div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+ </div>
+
+
+
+
+
+<!-- CDN : Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- <script src="js/bootstrap/bootstrap.bundle.js"></script> -->
+</body>
+</html>
